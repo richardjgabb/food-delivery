@@ -46,7 +46,7 @@ const RestaurantMenu = (props) => {
     const displayMenu = (item) => {
 
         return (
-            <div className='d-flex flex-column border border-primary rounded justify-content-between m-3 col-md-3 p-3 col-12' key={item.foodName}>
+            <div className='d-flex flex-column border border-primary rounded justify-content-between m-3 col-lg-3 p-3 col-12' key={item.foodName}>
                 <h3 className='fs-4'>{item.foodName}</h3>
                 <div className='container row d-flex'>
                     {item.calories && <p className='rounded calories text-white bg-success object-fit-scale text-no-wrap w-auto fs-6'>Calories: {item.calories}</p>}
@@ -72,7 +72,7 @@ const RestaurantMenu = (props) => {
 
     return (
             <div className='m-3 container-fluid row'>
-                <div className='row justify-content-evenly col-md-9 col-12'>
+                <div className='row justify-content-evenly col-lg-9 col-12'>
                     {menus.map(displayMenu)}
                 </div>
                 <Basket order={order} updateOrder={updateOrder} menu={menus}/>

@@ -9,7 +9,7 @@ const RestaurantDisplay = (props) => {
 
     const makeRestaurant = (restaurant) => {
         return (
-            <button className="col-12 p-2 m-2 col-sm-2 btn btn-outline-primary fs-3" key={restaurant.name}
+            <button className="col-12 p-2 m-2 col-md-2 btn btn-outline-primary fs-3" key={restaurant.name}
                 onClick={() => {
                     setHidden(!hidden)
                     setRestaurant(restaurant.id)

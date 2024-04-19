@@ -1,5 +1,5 @@
 
-import BasketItem from "./BasketItem/index.jsx"
+import BasketItem from "./BasketItem"
 import DisplayFees from "../DisplayFees/index.jsx"
 
 const Basket = (props) => {
